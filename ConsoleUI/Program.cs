@@ -11,13 +11,10 @@ namespace ConsoleUI
         {
             CarManager carManager = new CarManager(new InMemoryCarDal());
 
-            carManager.Add(new Car() { Id = 5, BrandId = 1, ColorId = 5, ModelYear = 2021, Description = "Çok Hızlı", DailyPrice = 800 });
-
             foreach (var car in carManager.GetAll())
             {
                 Console.WriteLine(car.Description);
             }
-
         }
     }
 }
