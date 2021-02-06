@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hsG2v5K11o/c9tpxGLbJhExF9/LeqYoZs1KnuUAdJLGpXhlKA/gEK3iGM0lZQX3+QDJAdkEV9g3kGo14w4pv3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tatac\\source\\repos\\ReCapProject\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tatac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

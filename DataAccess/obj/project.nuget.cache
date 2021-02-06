@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zd2mGw5tZlGABzsjf9wHKdA8RnbdSfzoAFoqDxO/7ogmdLCe+Dx7oI5PtzdjZMeyBKLoOVsw6hMrRCZI6MqzAw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tatac\\source\\repos\\ReCapProject\\DataAccess\\DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tatac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
