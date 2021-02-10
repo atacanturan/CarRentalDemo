@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAccess.Concrete.InMemory
 {
@@ -15,10 +16,10 @@ namespace DataAccess.Concrete.InMemory
         {
             _cars = new List<Car>()
             {
-                new Car{Id = 1, BrandId = 1, ColorId = 1, DailyPrice = 300, ModelYear = 2015, Description = "Orta Hızlı"},
-                new Car{Id = 2, BrandId = 1, ColorId = 2, DailyPrice = 500, ModelYear = 2018, Description = "Hızlı"},
-                new Car{Id = 3, BrandId = 2, ColorId = 3, DailyPrice = 1000, ModelYear = 2010, Description = "Yük Aracı"},
-                new Car{Id = 4, BrandId = 2, ColorId = 4, DailyPrice = 1200, ModelYear = 2012, Description = "Verimli Yük Aracı"}
+                new Car{CarId = 1, BrandId = 1, ColorId = 1, DailyPrice = 300, ModelYear = 2015, Description = "Orta Hızlı"},
+                new Car{CarId = 2, BrandId = 1, ColorId = 2, DailyPrice = 500, ModelYear = 2018, Description = "Hızlı"},
+                new Car{CarId = 3, BrandId = 2, ColorId = 3, DailyPrice = 1000, ModelYear = 2010, Description = "Yük Aracı"},
+                new Car{CarId = 4, BrandId = 2, ColorId = 4, DailyPrice = 1200, ModelYear = 2012, Description = "Verimli Yük Aracı"}
             };
         }
 
@@ -29,13 +30,23 @@ namespace DataAccess.Concrete.InMemory
 
         public void Delete(Car car)
         {
-            Car deletedCar = _cars.SingleOrDefault(c => c.Id == car.Id);
+            Car deletedCar = _cars.SingleOrDefault(c => c.CarId == car.CarId);
             _cars.Remove(deletedCar);
+        }
+
+        public Car Get(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Car> GetAll()
         {
             return _cars;
+        }
+
+        public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
 
         public List<Car> GetByBrandId(int brandId)
@@ -50,7 +61,7 @@ namespace DataAccess.Concrete.InMemory
 
         public void Update(Car car)
         {
-            Car updatedCar = _cars.SingleOrDefault(c => c.Id == car.Id);
+            Car updatedCar = _cars.SingleOrDefault(c => c.CarId == car.CarId);
             updatedCar.BrandId = car.BrandId;
             updatedCar.ColorId = car.ColorId;
             updatedCar.DailyPrice = car.DailyPrice;
