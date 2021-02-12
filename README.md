@@ -4,7 +4,7 @@
 2. Added database files
     - Made some updated for easy optimizations
       - Added IEntityRepository interface
-3. Added core segment
+3. Added **Core** segment
     - Every common files created in **Core** segment.
       - IDto
       - IEntity
