@@ -5,7 +5,7 @@
     - Made some updated for easy optimizations
       - Added IEntityRepository interface
 3. Added core segment
-    - Every common files created  on that segment 
+    - Every common files created in **Core** segment.
       - IDto
       - IEntity
       - IEntityRepository
