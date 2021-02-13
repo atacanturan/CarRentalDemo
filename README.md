@@ -2,7 +2,7 @@
 
 1. Created project architecture
 2. Added database files
-    - Made some updated for easy optimizations
+    - Made update for easy optimizations
       - Added IEntityRepository interface
 3. Added **Core** layer
     - Every common files created in **Core** layer.
