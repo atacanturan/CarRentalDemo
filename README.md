@@ -10,3 +10,6 @@
       - IEntity
       - IEntityRepository
       - EfEntityRepositoryBase
+4. Refactored codes.
+    - Added Result class.
+    - Added DataResult class.
