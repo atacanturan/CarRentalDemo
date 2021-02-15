@@ -20,7 +20,7 @@ namespace Business.Concrete
         }
         public IResult Add(Rental rental)
         {
-            var result = _rentalDal.GetAll(r => r.CarId == rental.CarId && rental.ReturnDate == null);
+            var result = _rentalDal.GetAll(r => r.CarId == rental.CarId && r.ReturnDate == null);
             if (result.Count > 0)
             {
                 return new ErrorResult(Messages.RentalAddedException);

@@ -16,7 +16,7 @@ namespace ConsoleUI
             //AddCustomer();
             //AddUser();
 
-            //RentCar();
+            RentCar();
         }
 
         private static void RentCar()
