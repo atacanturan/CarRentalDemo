@@ -13,7 +13,50 @@ namespace ConsoleUI
             //TestCarGetAll();
             //AddCar();
             //UpdateCar();
+            //AddCustomer();
+            //AddUser();
 
+            //RentCar();
+        }
+
+        private static void RentCar()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            var rentingCar1 = rentalManager.Add(new Rental
+            {
+                CarId = 4,
+                CustomerId = 2,
+                RentDate = DateTime.Now
+            });
+            var rentingCar2 = rentalManager.Add(new Rental
+            {
+                CarId = 1,
+                CustomerId = 2,
+                RentDate = DateTime.Now
+            });
+            Console.WriteLine($"Araba 1 kiralama durumu: {rentingCar1.Message}\nAraba 2 kiralama durumu: {rentingCar2.Message}");
+        }
+
+        private static void AddUser()
+        {
+            UserManager userManager = new UserManager(new EfUserDal());
+            userManager.Add(new User
+            {
+                FirstName = "Atacan",
+                LastName = "Turan",
+                CustomerId = 1,
+                Email = "atacanturan@hotmail.com",
+                Password = "123456"
+            });
+        }
+
+        private static void CustomerAdded()
+        {
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            customerManager.Add(new Customer
+            {
+                CompanyName = "Fiction"
+            });
         }
 
         private static void UpdateCar()
