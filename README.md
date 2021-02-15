@@ -10,3 +10,7 @@
       - IEntity
       - IEntityRepository
       - EfEntityRepositoryBase
+4. Refactored codes.
+    - Added Result class.
+    - Added DataResult class.
+    - Added Messages class field for sending constant messages.
