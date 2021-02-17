@@ -14,5 +14,8 @@ namespace Business.Constants
         public static string UpdatedException = "Ürün güncellenirken beklenmeyen bir hata oluştu.";
         public static string RentalAddedException = "Seçtiğiniz ürün başka biri tarafından kiralandı.";
         public static string Rented = "Araba başarıyla kiralandı.";
+        public static string MaintenenceTime = "Sistem bakımda.";
+        public static string Listed = "Ürünler listelendi.";
+        public static string ListedException = "Ürünler listelenirken beklenmeyen bir hata meydana geldi.";
     }
 }

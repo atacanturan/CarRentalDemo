@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Utilities.DataResults;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -17,6 +19,26 @@ namespace Business.Concrete
             _colorDal = colorDal;
         }
 
+        public IResult Add(Color color)
+        {
+            if (DateTime.Now.Hour == 18)
+            {
+                return new ErrorResult(Messages.AddedException);
+            }
+            _colorDal.Add(color);
+            return new SuccessResult(Messages.Added);
+        }
+
+        public IResult Delete(Color color)
+        {
+            if (DateTime.Now.Hour == 18)
+            {
+                return new ErrorResult(Messages.DeletedException);
+            }
+            _colorDal.Delete(color);
+            return new SuccessResult(Messages.Deleted);
+        }
+
         public IDataResult<List<Color>> GetAll()
         {
             return new SuccessDataResult<List<Color>>(_colorDal.GetAll());
@@ -25,6 +47,16 @@ namespace Business.Concrete
         public IDataResult<Color> GetByColorId(int colorId)
         {
             return new SuccessDataResult<Color>(_colorDal.Get(c => c.ColorId == colorId));
+        }
+
+        public IResult Update(Color color)
+        {
+            if (DateTime.Now.Hour == 18)
+            {
+                return new ErrorResult(Messages.UpdatedException);
+            }
+            _colorDal.Update(color);
+            return new SuccessResult(Messages.Updated);
         }
     }
 }

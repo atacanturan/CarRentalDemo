@@ -26,29 +26,37 @@ namespace Business.Concrete
                 return new ErrorResult(Messages.RentalAddedException);
             }
             _rentalDal.Add(rental);
-            return new SuccessResult(Messages.Added);
+            return new SuccessResult(Messages.Rented);
         }
 
         public IResult Delete(Rental rental)
         {
-            _rentalDal.Delete(rental);
-            return new SuccessResult(Messages.Deleted);
+            if (DateTime.Now.Hour == 13)
+            {
+                _rentalDal.Delete(rental);
+                return new SuccessResult(Messages.Deleted);
+            }
+            return new ErrorResult(Messages.MaintenenceTime);
         }
 
-        public IDataResult<Rental> Get(int id)
+        public IDataResult<Rental> GetById(int id)
         {
             return new SuccessDataResult<Rental>(_rentalDal.Get(r => r.Id == id));
         }
 
         public IDataResult<List<Rental>> GetAll()
         {
-            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
+            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll(), Messages.Listed);
         }
 
         public IResult Update(Rental rental)
         {
-            _rentalDal.Update(rental);
-            return new SuccessResult(Messages.Updated);
+            if (DateTime.Now.Hour == 13)
+            {
+                _rentalDal.Update(rental);
+                return new SuccessResult(Messages.Updated);
+            }
+            return new ErrorResult(Messages.MaintenenceTime);
         }
     }
 }
