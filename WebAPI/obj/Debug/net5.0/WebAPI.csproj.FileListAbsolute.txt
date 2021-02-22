@@ -61,3 +61,7 @@ C:\Users\tatac\source\repos\ReCapProject\WebAPI\obj\Debug\net5.0\scopedcss\bundl
 C:\Users\tatac\source\repos\ReCapProject\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
 C:\Users\tatac\source\repos\ReCapProject\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
 C:\Users\tatac\source\repos\ReCapProject\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+C:\Users\tatac\source\repos\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.dll
+C:\Users\tatac\source\repos\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\tatac\source\repos\ReCapProject\WebAPI\bin\Debug\net5.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\tatac\source\repos\ReCapProject\WebAPI\bin\Debug\net5.0\Castle.Core.dll
