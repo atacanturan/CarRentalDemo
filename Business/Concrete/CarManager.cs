@@ -11,6 +11,9 @@ using Entities.DTO_s;
 using Core.Utilities.Results;
 using Business.Constants;
 using Core.Utilities.DataResults;
+using FluentValidation;
+using Business.Validation.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 
 namespace Business.Concrete
 {
@@ -25,15 +28,10 @@ namespace Business.Concrete
 
         public IResult Add(Car car)
         {
-            if (car.DailyPrice > 150 && car.ModelYear > 2012)
-            {
-                _carDal.Add(car);
-                return new SuccessResult(Messages.Added);
-            }
-            else
-            {
-                return new ErrorResult(Messages.AddedException);
-            }
+            ValidationTool.Validate(new CarValidator(), car);
+            _carDal.Add(car);
+            return new SuccessResult(Messages.Added);
+            
         }
 
         public IResult Delete(Car car)

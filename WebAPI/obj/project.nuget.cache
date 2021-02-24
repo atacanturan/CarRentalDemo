@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TiWsT85IMMniSQtxvUCpMO/t6wZCE4rk3ukFIZxmi3DqdTU9iiE/Iub5g/svH2/grw8sljKT9noxcJ6Ja4KEGg==",
+  "dgSpecHash": "ZJIXII+7ppROE2JpRVCOR/2c3FMdNNkkcyo/qHaFeMvBOI57DyBzfiajYC9QBCo975e3607hXXp01qw9I031yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tatac\\source\\repos\\ReCapProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\tatac\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
