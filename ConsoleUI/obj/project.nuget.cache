@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iCZ/kiQomazWYQdwmGSZ/1ioFI6xhGNWVEikjeC1O/xBgk0+eWaCq3pvcSh9feax9ncXvCdhusT/dQZBWInASw==",
+  "dgSpecHash": "Om8dNuFCmyxF8ZuDObYBNAoHWJTr30Qi1oTGSm/cS5D76Wo7iPY/DCBvUGebykNg5DjoPIHyRGeHO64KLF6zLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tatac\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tatac\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
