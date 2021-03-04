@@ -17,5 +17,7 @@ namespace Business.Constants
         public static string MaintenenceTime = "Sistem bakımda.";
         public static string Listed = "Ürünler listelendi.";
         public static string ListedException = "Ürünler listelenirken beklenmeyen bir hata meydana geldi.";
+        public static string ImageLimitExceeded = "Her bir arabanın maksimum 5 resmi olabilir.";
+        public static string ImageAdded = "Resim başarıyla eklendi.";
     }
 }

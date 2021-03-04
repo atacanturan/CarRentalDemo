@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Om8dNuFCmyxF8ZuDObYBNAoHWJTr30Qi1oTGSm/cS5D76Wo7iPY/DCBvUGebykNg5DjoPIHyRGeHO64KLF6zLA==",
+  "dgSpecHash": "8wG3fdlSAJYoY3Ocq3uLEcTDIKB7NRE8xlsLz/DiQBf4XiTQ7cPhohYPRPc5pT4TqmYbyPRWmEP4Cms4pjZXNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\tatac\\source\\repos\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\tatac\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.0\\autofac.extras.dynamicproxy.6.0.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\fluentvalidation\\9.5.1\\fluentvalidation.9.5.1.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.3\\microsoft.aspnetcore.http.features.5.0.3.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -28,7 +29,7 @@
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.extensions.logging\\3.1.12\\microsoft.extensions.logging.3.1.12.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.12\\microsoft.extensions.logging.abstractions.3.1.12.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.extensions.options\\3.1.12\\microsoft.extensions.options.3.1.12.nupkg.sha512",
-    "C:\\Users\\tatac\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.12\\microsoft.extensions.primitives.3.1.12.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\microsoft.identitymodel.jsonwebtokens.5.5.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\microsoft.identitymodel.logging\\5.5.0\\microsoft.identitymodel.logging.5.5.0.nupkg.sha512",
@@ -66,6 +67,7 @@
     "C:\\Users\\tatac\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\tatac\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\tatac\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",

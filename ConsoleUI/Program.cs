@@ -15,8 +15,17 @@ namespace ConsoleUI
             //UpdateCar();
             //AddCustomer();
             //AddUser();
+            //RentCar();
 
-            RentCar();
+            CarImageManager carImageManager = new CarImageManager(new EfCarImageDal());
+
+            var result = carImageManager.Add(new CarImage
+            {
+                CarId = 1,
+                Date = DateTime.Now,
+                ImagePath = {}
+            });
+            Console.WriteLine(result.Message);
         }
 
         private static void RentCar()
