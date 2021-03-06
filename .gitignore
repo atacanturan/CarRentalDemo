@@ -86,6 +86,8 @@ fastlane/test_output
 .vs
 obj
 bin
+*.dll
+*.pdb
 
 # Code Injection
 #
