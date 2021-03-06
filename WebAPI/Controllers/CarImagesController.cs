@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
         {
             _carImageService = carImageService;
         }
-        [HttpPost("Add")]
+        [HttpPost("add")]
         public IActionResult Add([FromForm(Name = "Image")]IFormFile image, [FromForm]CarImage carImage)
         {
             var result = _carImageService.Add(image, carImage);
@@ -51,7 +51,7 @@ namespace WebAPI.Controllers
             var result = _carImageService.GetSameCars(carId);
             if (result.Success)
             {
-                return Ok(result);
+                return Ok(new { Data = result.Data.Select(data => new { CarId = data.CarId, ImageUrl = Path.GetFileName(data.ImagePath) }).ToList() });
             }
             return BadRequest(result);
         }

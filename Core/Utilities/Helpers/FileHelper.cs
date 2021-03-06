@@ -12,8 +12,7 @@ namespace Core.Utilities.Helpers
     public class FileHelper
     {
         public static Guid Guid { get; set; }
-
-
+        
         public static string Add(IFormFile formFile)
         {
             Guid = Guid.NewGuid();
