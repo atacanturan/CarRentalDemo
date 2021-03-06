@@ -22,6 +22,12 @@
     - This is connection layer between project area and localhost
 7. Added Autofac
     - With autofac, I avoid of dependency in API layer.
+8. Added AOP
+    - Apply Fluent Validation to Controllers
+9. Added image support
+    - Adding car images
+    - Updating car images
+    - Deleting car images 
 
 ## **Database Designers**
 
