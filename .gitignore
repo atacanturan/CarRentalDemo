@@ -84,10 +84,12 @@ fastlane/test_output
 
 ## Project files
 .vs
-obj
+*.suo
+*.user
+_ReSharper.*
 bin
-*.dll
-*.pdb
+obj
+packages
 
 # Code Injection
 #
