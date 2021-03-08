@@ -26,7 +26,7 @@ namespace Business.Concrete
         {
             BusinessRules.Run(CheckIfCarImageCountLessOrEqualThanFive(carImage.CarId));
 
-            carImage.ImagePath = FileHelper.Add(formFile);
+            carImage.ImagePath = FileHelper.Add(formFile, @"Images\");
             carImage.Date = DateTime.Now;
             _carImageDal.Add(carImage);
             return new SuccessResult(Messages.Added);
