@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Core.Utilities.Business;
-using Core.Utilities.Helpers;
+using Core.Utilities.ImageManagement;
 
 namespace Business.Concrete
 {

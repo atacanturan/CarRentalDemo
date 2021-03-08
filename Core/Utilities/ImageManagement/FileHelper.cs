@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Text;
-using Core.DataAccess;
-using Core.DataAccess.EntityFramework;
-using Core.Utilities.Results;
+using Microsoft.AspNetCore.Http;
+using System.Web;
 
-namespace Core.Utilities.Helpers
+namespace Core.Utilities.ImageManagement
 {
     public class FileHelper
     {
@@ -51,6 +47,6 @@ namespace Core.Utilities.Helpers
                 throw new Exception(exception.Message);
             }
         }
-        
+
     }
 }

@@ -7,11 +7,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using System.Drawing;
-using System.Net.Mime;
-using System.Text;
-using Core.Utilities.Helpers;
 
 namespace WebAPI.Controllers
 {
@@ -45,13 +40,16 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getcarpictures")]
+        [HttpGet("getcarimages")]
         public IActionResult Get(int carId)
         {
+            var image = System.IO.File.OpenRead(@"Images\simple_car.jpeg");
             var result = _carImageService.GetSameCars(carId);
             if (result.Success)
             {
-                return Ok(new { Data = result.Data.Select(data => new { CarId = data.CarId, ImageUrl = Path.GetFileName(data.ImagePath) }).ToList() });
+                return result.Data.Count != 0 
+                    ? Ok(new { Data = result.Data.Select(data => new { CarId = data.CarId, ImageUrl = Path.GetFileName(data.ImagePath) }).ToList() })
+                    : File(image, "image/jpeg");
             }
             return BadRequest(result);
         }
