@@ -3,6 +3,7 @@ using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using System;
+using Core.Entities.Concrete;
 
 namespace ConsoleUI
 {
@@ -16,16 +17,7 @@ namespace ConsoleUI
             //AddCustomer();
             //AddUser();
             //RentCar();
-
-            CarImageManager carImageManager = new CarImageManager(new EfCarImageDal());
-
-            var result = carImageManager.Add(new CarImage
-            {
-                CarId = 1,
-                Date = DateTime.Now,
-                ImagePath = {}
-            });
-            Console.WriteLine(result.Message);
+            
         }
 
         private static void RentCar()
@@ -48,15 +40,15 @@ namespace ConsoleUI
 
         private static void AddUser()
         {
-            UserManager userManager = new UserManager(new EfUserDal());
-            userManager.Add(new User
-            {
-                FirstName = "Atacan",
-                LastName = "Turan",
-                CustomerId = 1,
-                Email = "atacanturan@hotmail.com",
-                Password = "123456"
-            });
+            //UserManager userManager = new UserManager(new EfUserDal());
+            //userManager.Add(new User
+            //{
+            //    FirstName = "Atacan",
+            //    LastName = "Turan",
+            //    CustomerId = 1,
+            //    Email = "atacanturan@hotmail.com",
+            //    Password = "123456"
+            //});
         }
 
         private static void CustomerAdded()

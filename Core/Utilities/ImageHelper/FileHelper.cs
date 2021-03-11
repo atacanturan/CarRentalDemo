@@ -1,14 +1,12 @@
 ﻿using System;
 using System.IO;
 using Microsoft.AspNetCore.Http;
-using System.Web;
 
-namespace Core.Utilities.ImageManagement
+namespace Core.Utilities.ImageHelper
 {
     public class FileHelper
     {
         public static Guid Guid { get; set; }
-        
         public static string Add(IFormFile formFile, string sourcePath)
         {
             Guid = Guid.NewGuid();
