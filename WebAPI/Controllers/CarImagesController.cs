@@ -43,13 +43,13 @@ namespace WebAPI.Controllers
         [HttpGet("getcarimages")]
         public IActionResult Get(int carId)
         {
-            var image = System.IO.File.OpenRead(@"Images\simple_car.jpeg");
+            var constantImage = Path.GetFullPath(@"Images\simple_car.jpeg");
             var result = _carImageService.GetSameCars(carId);
             if (result.Success)
             {
-                return result.Data.Count != 0 
-                    ? Ok(new { Data = result.Data.Select(data => new { CarId = data.CarId, ImageUrl = Path.GetFileName(data.ImagePath) }).ToList() })
-                    : File(image, "image/jpeg");
+                return result.Data.Count != 0
+                    ? Ok(result.Data.Select(data=>Path.GetFullPath(data.ImagePath)))
+                    : Ok(constantImage);
             }
             return BadRequest(result);
         }
