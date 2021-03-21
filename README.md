@@ -19,7 +19,6 @@
     - New entity, **Customer**
     - New entity, **Rental**
 6. Added WebAPI
-    - This is connection layer between project area and localhost
 7. Added Autofac
     - With autofac, I avoid of dependency in API layer.
 8. Added AOP
