@@ -48,7 +48,7 @@ namespace WebAPI.Controllers
             if (result.Success)
             {
                 return result.Data.Count != 0
-                    ? Ok(result.Data.Select(data=>Path.GetFullPath(data.ImagePath)))
+                    ? Ok(result)
                     : Ok(constantImage);
             }
             return BadRequest(result);

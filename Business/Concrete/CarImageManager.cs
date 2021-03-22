@@ -7,6 +7,7 @@ using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using Core.Utilities.Business;
 using Core.Utilities.ImageHelper;
@@ -25,8 +26,8 @@ namespace Business.Concrete
         public IResult Add(IFormFile formFile, CarImage carImage)
         {
             BusinessRules.Run(CheckIfCarImageCountLessOrEqualThanFive(carImage.CarId));
-
-            carImage.ImagePath = FileHelper.Add(formFile, @"Images\");
+            var sourcePath = Path.GetFullPath(@"Images\");
+            carImage.ImagePath = FileHelper.Add(formFile, sourcePath);
             carImage.Date = DateTime.Now;
             _carImageDal.Add(carImage);
             return new SuccessResult(Messages.Added);
