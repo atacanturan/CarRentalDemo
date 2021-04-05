@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +20,9 @@ namespace Business.Constants
         public static string ListedException = "Ürünler listelenirken beklenmeyen bir hata meydana geldi.";
         public static string ImageLimitExceeded = "Her bir arabanın maksimum 5 resmi olabilir.";
         public static string ImageAdded = "Resim başarıyla eklendi.";
+        public static string UserNotFound = "Kullanıcı bulunamadı.";
+        public static string InvalidPassword = "Geçersiz şifre.";
+        public static string SuccessLogin = "Giriş başarılı.";
+        public static string UserAlreadyExists = "Böyle bir kullanıcı mevcut.";
     }
 }
